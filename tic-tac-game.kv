@@ -1,0 +1,56 @@
+FloatLayout:
+    GridLayout:
+        size_hint: .5,.5
+        pos_hint: {'center_x': .5 , 'center_y': .7 }
+        cols: 3
+        rows: 3
+
+
+        Button:
+            id: btn1
+            font_size: '45sp'
+            on_release: app.presser(btn1)
+        Button:
+            id: btn2
+            font_size: '45sp'
+            on_release: app.presser(btn2)
+        Button:
+            id: btn3
+            font_size: '45sp'
+            on_release: app.presser(btn3)
+        Button:
+            id: btn4
+            font_size: '45sp'
+            on_release: app.presser(btn4)
+        Button:
+            id: btn5
+            font_size: '45sp'
+            on_release: app.presser(btn5)
+        Button:
+            id: btn6
+            font_size: '45sp'
+            on_release: app.presser(btn6)
+        Button:
+            id: btn7
+            font_size: '45sp'
+            on_release: app.presser(btn7)
+        Button:
+            id: btn8
+            font_size: '45sp'
+            on_release: app.presser(btn8)
+        Button:
+            id: btn9
+            font_size: '45sp'
+            on_release: app.presser(btn9)
+    Label:
+        id : score
+        text: "X\'s Goes first"
+        font_size: '32sp'
+        pos_hint:{'center_x':.5, 'center_y':.3}
+
+    Button:
+        text: "Reset"
+        font_size: '32sp'
+        size_hint: .2,.1
+        pos_hint:{'center_x':.5,'center_y':.15}
+        on_release: app.restart()
